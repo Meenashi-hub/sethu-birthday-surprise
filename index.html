@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,204 +6,527 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#210d24">
 <title>For Sethu, With All My Love ❤️</title>
+
 <style>
-:root{--pink:#ff8eb7;--rose:#ff5d91;--cream:#fff4f5;--dark:#210d24;--glass:rgba(255,255,255,.09)}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:radial-gradient(ellipse at top,#5c214c 0%,#210d24 55%,#100914 100%);color:var(--cream);font-family:Georgia,'Times New Roman',serif;overflow-x:hidden}
-button{font:inherit;cursor:pointer}
-button:focus-visible,a:focus-visible{outline:3px solid white;outline-offset:4px}
-#hearts,#fireworks{position:fixed;inset:0;pointer-events:none;z-index:5}
-#fireworks{z-index:20}
-.screen{min-height:100svh;display:flex;align-items:center;justify-content:center;padding:28px 18px;position:relative}
-.hero{text-align:center;max-width:720px;position:relative;z-index:2}
-.eyebrow{font:600 .76rem Arial,sans-serif;letter-spacing:.25em;text-transform:uppercase;color:#ffb8d0}
-h1{font-size:clamp(2.8rem,10vw,6rem);line-height:1.02;margin:18px 0;color:#fff1f5;font-weight:normal;text-shadow:0 0 30px #ff77aa44}
-h2{font-size:clamp(2rem,7vw,3.4rem);font-weight:normal;margin:0 0 18px}
-p{line-height:1.8;color:#f7dce7}
-.lead{font-size:clamp(1rem,3.8vw,1.25rem);max-width:560px;margin:0 auto 28px}
-.btn{border:0;border-radius:999px;padding:15px 24px;background:linear-gradient(135deg,#ffb4cc,#ff5d91);color:#351327;font-weight:bold;box-shadow:0 10px 35px #ff5d9140;transition:transform .2s}
-.btn:hover{transform:translateY(-2px)}
-.btn.secondary{background:transparent;color:#ffeaf1;border:1px solid #ffb4cc88;box-shadow:none}
-.small{font: .86rem Arial,sans-serif;color:#e7b8ca}
-.glow{font-size:3.2rem;display:block;filter:drop-shadow(0 0 18px #ff7cac);margin-bottom:18px;animation:pulse 2s infinite}
-@keyframes pulse{50%{transform:scale(1.08)}}
-section.content{padding:85px 18px;max-width:900px;margin:auto;text-align:center;position:relative;z-index:2}
-.card{background:var(--glass);border:1px solid #ffc5d522;border-radius:24px;padding:clamp(22px,5vw,42px);box-shadow:0 20px 80px #0002;backdrop-filter:blur(10px)}
-.letter{text-align:left;font-size:1.08rem;white-space:pre-line}
-.signature{font-size:1.5rem;color:#ffb4cc;margin-top:25px}
-.divider{width:90px;height:1px;background:#ff9dbd;margin:28px auto}
-.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:28px}
-.photo{border:1px solid #ffc5d533;border-radius:18px;overflow:hidden;background:#ffffff0b;min-height:175px;display:flex;flex-direction:column;justify-content:center}
-.photo img{width:100%;height:230px;object-fit:cover;display:block}
-.photo .placeholder{padding:25px;color:#ffc6d9;font-size:.95rem}
-.photo .caption{padding:12px;font: .9rem Arial,sans-serif;color:#ffe7ef}
-.memory-list{display:grid;gap:12px;text-align:left;margin-top:24px}
-.memory{padding:16px 18px;border-radius:15px;background:#ffffff0a;border:1px solid #ffc5d51b;color:#ffe4ed;line-height:1.6}
-.memory b{color:#ffb4cc}
-.end{padding-bottom:110px}
-footer{text-align:center;padding:24px;color:#bd91a6;font: .8rem Arial,sans-serif}
-.floating{position:absolute;bottom:-30px;animation:floatUp linear forwards;opacity:.8}
-@keyframes floatUp{to{transform:translateY(-110vh) rotate(25deg);opacity:0}}
-.hidden{display:none!important}
-@media(max-width:520px){.gallery{grid-template-columns:1fr}.photo img{height:260px}.screen{padding:24px 16px}section.content{padding:65px 16px}}
-@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;scroll-behavior:auto!important}}
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  color: #fff4f5;
+  font-family: Georgia, "Times New Roman", serif;
+  background: radial-gradient(ellipse at top, #70284f, #210d24 60%, #100914);
+  overflow-x: hidden;
+}
+
+button { font: inherit; cursor: pointer; }
+
+.screen {
+  min-height: 100vh;
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.hero {
+  max-width: 720px;
+  position: relative;
+  z-index: 2;
+}
+
+.eyebrow {
+  font: 600 12px Arial, sans-serif;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #ffb8d0;
+}
+
+h1 {
+  font-size: clamp(42px, 10vw, 78px);
+  font-weight: normal;
+  line-height: 1.1;
+  margin: 24px 0;
+}
+
+h2 {
+  font-size: clamp(32px, 7vw, 48px);
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+p {
+  color: #f7dce7;
+  line-height: 1.9;
+}
+
+.lead {
+  font-size: 18px;
+  max-width: 560px;
+  margin: 20px auto 30px;
+}
+
+.glow {
+  display: block;
+  font-size: 60px;
+  margin-bottom: 25px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  50% { transform: scale(1.12); }
+}
+
+.btn {
+  border: 0;
+  border-radius: 40px;
+  padding: 15px 25px;
+  margin: 8px;
+  background: linear-gradient(135deg, #ffb4cc, #ff5d91);
+  color: #351327;
+  font-weight: bold;
+  box-shadow: 0 10px 35px #ff5d9140;
+}
+
+.secondary {
+  background: transparent;
+  color: #ffeaf1;
+  border: 1px solid #ffb4cc;
+  box-shadow: none;
+}
+
+.small {
+  font: 13px Arial, sans-serif;
+  color: #e7b8ca;
+}
+
+.content {
+  max-width: 850px;
+  padding: 70px 20px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.card {
+  background: #ffffff10;
+  border: 1px solid #ffc5d533;
+  border-radius: 24px;
+  padding: clamp(22px, 5vw, 42px);
+  box-shadow: 0 20px 80px #0002;
+}
+
+.letter {
+  text-align: left;
+  font-size: 17px;
+  line-height: 2;
+  white-space: pre-line;
+}
+
+.signature {
+  font-size: 23px;
+  color: #ffb4cc;
+  margin-top: 25px;
+}
+
+.divider {
+  width: 90px;
+  height: 1px;
+  background: #ff9dbd;
+  margin: 30px auto;
+}
+
+.memory-list {
+  display: grid;
+  gap: 14px;
+  margin-top: 30px;
+  text-align: left;
+}
+
+.memory {
+  padding: 18px;
+  border-radius: 16px;
+  background: #ffffff0b;
+  border: 1px solid #ffc5d522;
+  color: #ffe4ed;
+  line-height: 1.8;
+}
+
+.memory b { color: #ffb4cc; }
+
+.song-card {
+  margin: 25px auto;
+  padding: 20px;
+  background: #ffffff10;
+  border: 1px solid #ffc5d533;
+  border-radius: 22px;
+  max-width: 650px;
+}
+
+.song-card iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: 14px;
+  display: block;
+}
+
+#hearts, #fireworks {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 5;
+}
+
+#fireworks { z-index: 20; }
+
+.floating {
+  position: absolute;
+  bottom: -40px;
+  animation: floatUp linear forwards;
+  opacity: .85;
+}
+
+@keyframes floatUp {
+  to {
+    transform: translateY(-110vh) rotate(30deg);
+    opacity: 0;
+  }
+}
+
+.hidden { display: none !important; }
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #bd91a6;
+  font: 13px Arial, sans-serif;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
 </style>
 </head>
+
 <body>
-<canvas id="fireworks"></canvas><div id="hearts"></div>
+<canvas id="fireworks"></canvas>
+<div id="hearts"></div>
 
 <main>
-<section class="screen" id="opening">
-  <div class="hero">
-    <span class="glow">🎂</span>
-    <div class="eyebrow">A little surprise, made with love</div>
-    <h1>Happy Birthday,<br><span style="color:#ff9fbe">Sethu</span> ❤️</h1>
-    <p class="lead">Today is all about you. I made a little corner of the world just to remind you how special you are to me.</p>
-    <button class="btn" id="openBtn">Open your surprise 💌</button>
-    <p class="small" style="margin-top:18px">P.S. Turn your sound on for a little birthday magic 🎶</p>
-  </div>
-</section>
+  <!-- Opening screen -->
+  <section class="screen" id="opening">
+    <div class="hero">
+      <span class="glow">🎂</span>
+      <div class="eyebrow">A little surprise, made with love</div>
 
-<div id="surprise" class="hidden">
-<section class="screen" style="min-height:75svh">
-  <div class="hero">
-    <span class="glow">✨💗✨</span>
-    <div class="eyebrow">To my favourite person</div>
-    <h2>Today, the world got<br>a little brighter.</h2>
-    <p class="lead">Because someone as wonderful as you was born. I hope this little surprise makes you smile the way you make me smile.</p>
-    <button class="btn secondary" id="musicBtn">♫ Play birthday music</button>
-  </div>
-</section>
+      <h1>
+        Happy Birthday,<br>
+        <span style="color:#ff9fbe">Sethu</span> ❤️
+      </h1>
 
-<section class="content" id="letter">
-  <div class="eyebrow">A letter from my heart</div>
-  <h2>Dear Sethu… 💌</h2>
-  <div class="card letter" id="letterText">Happy Birthday, Sethu ❤️
+      <p class="lead">
+        Today is all about you. I made a little corner of the
+        world just to remind you how special you are to me.
+      </p>
 
-I wish I could put into words just how much you mean to me. You have a special place in my heart, and even the smallest things about you can make my day better.
+      <button class="btn" id="openBtn">
+        Open your surprise 💌
+      </button>
 
-On your birthday, I hope life gives you a thousand reasons to smile. I hope your dreams come closer, your worries feel lighter, and you always remember how valuable and loved you are.
+      <p class="small">
+        P.S. A special song is waiting for you 🎶
+      </p>
+    </div>
+  </section>
 
-Thank you for being you. No fancy gift could ever say everything I feel, so I made this little surprise with all the love I have.
+  <!-- Birthday surprise -->
+  <div id="surprise" class="hidden">
 
-Whatever this new year of your life brings, I hope it brings you happiness, peace, good health, and beautiful memories.
+    <section class="screen">
+      <div class="hero">
+        <span class="glow">✨💗✨</span>
+        <div class="eyebrow">To my favourite person</div>
 
-Today is your day, Sethu. Smile lots, make a wish, eat extra cake, and never forget that someone is cheering for you with all her heart. ❤️
+        <h2>Today, the world got<br>a little brighter.</h2>
+
+        <p class="lead">
+          Because someone as wonderful as you was born.
+          I hope this little surprise makes you smile
+          the way you make me smile.
+        </p>
+
+        <button class="btn" id="songBtn">
+          🎶 Play your special song
+        </button>
+
+        <p class="small">
+          Hey Nijame — a song just for you, Sethu ❤️
+        </p>
+      </div>
+    </section>
+
+    <!-- Real song from the official YouTube video -->
+    <section class="content" id="songSection">
+      <div class="eyebrow">A song just for you</div>
+      <h2>Hey Nijame 🎶❤️</h2>
+
+      <div class="song-card">
+        <p>
+          Every special moment deserves a special song. 💗
+        </p>
+
+        <iframe
+          id="songPlayer"
+          src="about:blank"
+          title="Hey Nijame official video song"
+          loading="lazy"
+          allow="encrypted-media; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
+
+        <p class="small">
+          Press Play in the video to listen to the song.
+        </p>
+
+        <a
+          href="https://www.youtube.com/watch?v=WNC5rXl3lt0"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="color:#ffb4cc">
+          Open song on YouTube ↗
+        </a>
+      </div>
+    </section>
+
+    <!-- Love letter -->
+    <section class="content" id="letter">
+      <div class="eyebrow">A letter from my heart</div>
+      <h2>Dear Sethu… 💌</h2>
+
+      <div class="card letter">Happy Birthday, Sethu ❤️
+
+I wish I could put into words just how much you mean to me.
+You have a special place in my heart, and even the smallest
+things about you can make my day better.
+
+On your birthday, I hope life gives you a thousand reasons
+to smile. I hope your dreams come closer, your worries feel
+lighter, and you always remember how valuable and loved you are.
+
+Thank you for being you. No fancy gift could ever say
+everything I feel, so I made this little surprise with all
+the love I have.
+
+Whatever this new year of your life brings, I hope it brings
+you happiness, peace, good health, and beautiful memories.
+
+Today is your day, Sethu. Smile lots, make a wish, eat extra
+cake, and never forget that someone is cheering for you
+with all her heart. ❤️
 
 Happy Birthday, my favourite person. 🎂✨</div>
-  <div class="signature">With all my love, always ❤️</div>
-  <p class="small">You can personalise this letter in <code>index.html</code> before sharing.</p>
-</section>
 
-<section class="content" id="memories">
-  <div class="eyebrow">Little moments, big feelings</div>
-  <h2>Our little memory lane 📸</h2>
-  <p>Replace these placeholders with your favourite photos. You can add your own captions too.</p>
-  <div class="gallery">
-    <div class="photo"><div class="placeholder">📷<br><br>Add a favourite photo<br><span class="small">photos/photo1.jpg</span></div><div class="caption">A memory I want to keep ❤️</div></div>
-    <div class="photo"><div class="placeholder">🌷<br><br>Add a photo that makes you smile<br><span class="small">photos/photo2.jpg</span></div><div class="caption">One of my favourite moments</div></div>
-    <div class="photo"><div class="placeholder">✨<br><br>Add a special memory<br><span class="small">photos/photo3.jpg</span></div><div class="caption">A little moment, a big feeling</div></div>
-    <div class="photo"><div class="placeholder">💗<br><br>Add one more photo<br><span class="small">photos/photo4.jpg</span></div><div class="caption">More memories to come…</div></div>
-  </div>
-  <div class="memory-list">
-    <div class="memory"><b>One thing I adore about you:</b> <span contenteditable="true">The way you make ordinary moments feel special.</span></div>
-    <div class="memory"><b>My wish for you:</b> <span contenteditable="true">May you always find reasons to smile and courage to chase every dream.</span></div>
-    <div class="memory"><b>One promise for this year:</b> <span contenteditable="true">To keep celebrating the little things that make you, you.</span></div>
-  </div>
-</section>
+      <div class="signature">With all my love, always ❤️</div>
+      <div class="divider"></div>
 
-<section class="screen end">
-  <div class="hero">
-    <span class="glow">🎆</span>
-    <div class="eyebrow">Make a wish, birthday boy</div>
-    <h2>One more thing…</h2>
-    <p class="lead">I hope this new chapter is kinder, brighter, and more beautiful than you imagined. Keep shining, Sethu. The world is better with you in it.</p>
-    <button class="btn" id="fireBtn">Make the sky sparkle 🎇</button>
-    <p style="font-size:1.4rem;color:#ffb4cc;margin-top:28px">Happy Birthday, Sethu! ❤️</p>
-    <button class="btn secondary" id="replayBtn">Replay the surprise ↻</button>
+      <div class="memory-list">
+        <div class="memory">
+          <b>One thing I adore about you: 💗</b><br>
+          The way you make ordinary moments feel special.
+        </div>
+
+        <div class="memory">
+          <b>My wish for you: 🌷</b><br>
+          May you always find reasons to smile and courage
+          to chase every dream.
+        </div>
+
+        <div class="memory">
+          <b>One promise for this year: ✨</b><br>
+          To keep celebrating the little things that make you, you.
+        </div>
+      </div>
+    </section>
+
+    <!-- Birthday ending -->
+    <section class="screen">
+      <div class="hero">
+        <span class="glow">🎆</span>
+        <div class="eyebrow">Make a wish, birthday boy</div>
+
+        <h2>One more thing…</h2>
+
+        <p class="lead">
+          I hope this new chapter is kinder, brighter, and more
+          beautiful than you imagined. Keep shining, Sethu.
+          The world is better with you in it.
+        </p>
+
+        <button class="btn" id="fireBtn">
+          Make the sky sparkle 🎇
+        </button>
+
+        <p style="font-size:23px;color:#ffb4cc;margin-top:28px">
+          Happy Birthday, Sethu! ❤️
+        </p>
+
+        <button class="btn secondary" id="replayBtn">
+          Replay the surprise ↻
+        </button>
+      </div>
+    </section>
+
   </div>
-</section>
-</div>
 </main>
+
 <footer>Made with love, just for Sethu ❤️</footer>
 
 <script>
-const opening = document.getElementById('opening');
-const surprise = document.getElementById('surprise');
-const openBtn = document.getElementById('openBtn');
-const musicBtn = document.getElementById('musicBtn');
-let audioCtx = null, musicOn = false, musicTimer = null;
-openBtn.addEventListener('click', () => {
-  opening.classList.add('hidden');
-  surprise.classList.remove('hidden');
+const opening = document.getElementById("opening");
+const surprise = document.getElementById("surprise");
+const songPlayer = document.getElementById("songPlayer");
+
+document.getElementById("openBtn").addEventListener("click", () => {
+  opening.classList.add("hidden");
+  surprise.classList.remove("hidden");
   startHearts();
-  playTone();
-  window.scrollTo({top:0,behavior:'smooth'});
+
+  window.scrollTo({ top: 0, behavior: "smooth" });
 });
-function startHearts(){
-  const holder=document.getElementById('hearts');
-  setInterval(()=>{
-    if(document.hidden)return;
-    const h=document.createElement('span'); h.className='floating';
-    h.textContent=['♥','♡','💗','✨'][Math.floor(Math.random()*4)];
-    h.style.left=Math.random()*100+'vw';
-    h.style.fontSize=(14+Math.random()*20)+'px';
-    h.style.animationDuration=(5+Math.random()*5)+'s';
-    h.style.color=['#ff8eb7','#ffd0df','#fff0f5'][Math.floor(Math.random()*3)];
-    holder.appendChild(h); setTimeout(()=>h.remove(),11000);
-  },450);
+
+document.getElementById("songBtn").addEventListener("click", () => {
+  songPlayer.src =
+    "https://www.youtube-nocookie.com/embed/WNC5rXl3lt0?rel=0";
+
+  document.getElementById("songSection").scrollIntoView({
+    behavior: "smooth"
+  });
+});
+
+function startHearts() {
+  if (startHearts.started) return;
+  startHearts.started = true;
+
+  const holder = document.getElementById("hearts");
+
+  setInterval(() => {
+    if (document.hidden) return;
+
+    const heart = document.createElement("span");
+    heart.className = "floating";
+    heart.textContent = ["♥", "♡", "💗", "✨"][
+      Math.floor(Math.random() * 4)
+    ];
+
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.fontSize = 14 + Math.random() * 20 + "px";
+    heart.style.animationDuration = 5 + Math.random() * 5 + "s";
+    heart.style.color = ["#ff8eb7", "#ffd0df", "#fff0f5"][
+      Math.floor(Math.random() * 3)
+    ];
+
+    holder.appendChild(heart);
+    setTimeout(() => heart.remove(), 11000);
+  }, 450);
 }
-function playTone(){
-  try{
-    audioCtx = audioCtx || new (window.AudioContext||window.webkitAudioContext)();
-    if(audioCtx.state==='suspended')audioCtx.resume();
-    musicOn=true; musicBtn.textContent='♫ Birthday music is playing — tap to stop';
-    const notes=[523.25,523.25,587.33,523.25,698.46,659.25,523.25,523.25,587.33,523.25,783.99,698.46];
-    let i=0;
-    function note(){
-      if(!musicOn)return;
-      const osc=audioCtx.createOscillator(), gain=audioCtx.createGain();
-      osc.type='sine';osc.frequency.value=notes[i%notes.length];
-      gain.gain.setValueAtTime(.0001,audioCtx.currentTime);
-      gain.gain.exponentialRampToValueAtTime(.12,audioCtx.currentTime+.03);
-      gain.gain.exponentialRampToValueAtTime(.0001,audioCtx.currentTime+.32);
-      osc.connect(gain);gain.connect(audioCtx.destination);
-      osc.start();osc.stop(audioCtx.currentTime+.34);i++;
-      musicTimer=setTimeout(note,360);
-    } note();
-  }catch(e){musicBtn.textContent='Music is not supported in this browser';}
+
+document.getElementById("replayBtn").addEventListener("click", () => {
+  songPlayer.src = "about:blank";
+  surprise.classList.add("hidden");
+  opening.classList.remove("hidden");
+
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+const canvas = document.getElementById("fireworks");
+const ctx = canvas.getContext("2d");
+
+let particles = [];
+let raf = null;
+
+function resize() {
+  canvas.width = innerWidth * devicePixelRatio;
+  canvas.height = innerHeight * devicePixelRatio;
+  canvas.style.width = innerWidth + "px";
+  canvas.style.height = innerHeight + "px";
+
+  ctx.setTransform(
+    devicePixelRatio, 0, 0, devicePixelRatio, 0, 0
+  );
 }
-musicBtn.addEventListener('click',()=>{
-  if(musicOn){musicOn=false;clearTimeout(musicTimer);musicBtn.textContent='♫ Play birthday music';}
-  else playTone();
-});
-document.getElementById('replayBtn').addEventListener('click',()=>{
-  surprise.classList.add('hidden');opening.classList.remove('hidden');musicOn=false;clearTimeout(musicTimer);
-  window.scrollTo({top:0,behavior:'smooth'});
-});
-const canvas=document.getElementById('fireworks'),ctx=canvas.getContext('2d');
-let particles=[],raf=null;
-function resize(){canvas.width=innerWidth*devicePixelRatio;canvas.height=innerHeight*devicePixelRatio;canvas.style.width=innerWidth+'px';canvas.style.height=innerHeight+'px';ctx.setTransform(devicePixelRatio,0,0,devicePixelRatio,0,0)}
-window.addEventListener('resize',resize);resize();
-function burst(x,y){
-  for(let i=0;i<90;i++){const a=Math.random()*Math.PI*2,s=1.5+Math.random()*5;
-    particles.push({x,y,vx:Math.cos(a)*s,vy:Math.sin(a)*s,life:50+Math.random()*30,max:80,hue:Math.random()*360,size:1+Math.random()*2.5});
+
+window.addEventListener("resize", resize);
+resize();
+
+function burst(x, y) {
+  for (let i = 0; i < 90; i++) {
+    const angle = Math.random() * Math.PI * 2;
+    const speed = 1.5 + Math.random() * 5;
+
+    particles.push({
+      x, y,
+      vx: Math.cos(angle) * speed,
+      vy: Math.sin(angle) * speed,
+      life: 50 + Math.random() * 30,
+      max: 80,
+      hue: Math.random() * 360,
+      size: 1 + Math.random() * 2.5
+    });
   }
 }
-function animate(){
-  ctx.clearRect(0,0,innerWidth,innerHeight);
-  particles=particles.filter(p=>p.life>0);
-  for(const p of particles){p.x+=p.vx;p.y+=p.vy;p.vy+=.035;p.vx*=.99;p.life--;
-    ctx.globalAlpha=Math.max(0,p.life/p.max);ctx.fillStyle=`hsl(${p.hue},100%,70%)`;
-    ctx.beginPath();ctx.arc(p.x,p.y,p.size,0,Math.PI*2);ctx.fill();}
-  ctx.globalAlpha=1;
-  if(particles.length)raf=requestAnimationFrame(animate);else{cancelAnimationFrame(raf);raf=null;}
+
+function animate() {
+  ctx.clearRect(0, 0, innerWidth, innerHeight);
+  particles = particles.filter(p => p.life > 0);
+
+  for (const p of particles) {
+    p.x += p.vx;
+    p.y += p.vy;
+    p.vy += 0.035;
+    p.vx *= 0.99;
+    p.life--;
+
+    ctx.globalAlpha = Math.max(0, p.life / p.max);
+    ctx.fillStyle = `hsl(${p.hue},100%,70%)`;
+
+    ctx.beginPath();
+    ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+    ctx.fill();
+  }
+
+  ctx.globalAlpha = 1;
+
+  if (particles.length) {
+    raf = requestAnimationFrame(animate);
+  } else {
+    cancelAnimationFrame(raf);
+    raf = null;
+  }
 }
-function fireworks(){
-  for(let i=0;i<5;i++)setTimeout(()=>{burst(innerWidth*(.15+Math.random()*.7),innerHeight*(.15+Math.random()*.45));if(!raf)animate()},i*350);
+
+function fireworks() {
+  for (let i = 0; i < 5; i++) {
+    setTimeout(() => {
+      burst(
+        innerWidth * (0.15 + Math.random() * 0.7),
+        innerHeight * (0.15 + Math.random() * 0.45)
+      );
+
+      if (!raf) animate();
+    }, i * 350);
+  }
 }
-document.getElementById('fireBtn').addEventListener('click',fireworks);
+
+document.getElementById("fireBtn").addEventListener("click", fireworks);
 </script>
 </body>
 </html>
